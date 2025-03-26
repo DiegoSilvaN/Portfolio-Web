@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portafolio - Dsn</title>
+    <meta name="keywords" content="portfolio, analyst, developer, data">
+    <meta name="description" content="Portfolio Developer - Diego Silva">
+    <meta name="author" content="DsN">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/Logo_DS-fotor-bg-remover-20230605221057.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Logo_DS-fotor-bg-remover-20230605221057.png" class="logo" alt="Logo Diego">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-txt">
+                <h1>I'm <br>Diego <span> Silva</span></h1>
+                <p>Web Developer & Data Analyst passionate about creating impactful digital experiences.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/me.png" alt="Diego">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-t">Who am I? </h1>
+                    <p>Hi, my name is Diego Silva, I live in Santiago, Chile</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analysis:</span> Power BI, Python, SQL</li>
+                            <li><span>Web Development:</span> HTML, CSS, JavaScript, React</li>
+                            <li><span>3D Modeling:</span> Fusion360, Blender</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 </span>Freelance Web Developer</li>
+                            <li><span>2024 </span>Operation Analyst - BCI</li>
+                            <li><span></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Present </span>Telematics Engineering - USM </li>
+                            <li><span></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>04/2022 - </span>Google Active: Mobile app development. </li>
+                            <li><span>01/2023 - </span>Google Active: Cyber Security in teleworking. </li>
+                            <li><span>01/2023 - </span>Oxford Home Study Centre: Cyber Security. </li>
+                            <li><span>02/2023 - </span>AIEP en conjunto con Fundación Teléfonica Movistar: Programming with JavaScript. </li>
+                            <li><span>02/2023 - </span>AIEP en conjunto con Fundación Teléfonica Movistar: Web design with HTML5 + CSS. </li>
+                            <li><span>12/2023 - </span>IBM Developer Skills Network: Python 101 for Data Science. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-t">My services</h1>
+            <div class="serv-list">
+                <div>
+                    <i class="fas fa-database"></i>
+                    <h2>Data <br>Analysis</h2>
+                    <p>Providing insightful data analysis using Python, SQL, and Power BI to drive business decisions.</p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web <br>Development</h2>
+                    <p>Building modern and responsive web applications using React, JavaScript, and CSS.</p>
+                </div>
+                <div>
+                    <i class="fas fa-cube"></i>
+                    <h2>3D <br>Modeling</h2>
+                    <p>Creating detailed 3D models for engineering and design purposes using Blender and Fusion 360.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-t"> My Projects </h1>
+            <div class="proj-list">
+                <div class="proj">
+                    <img src="/Webpage.png">
+                    <img src="/cswpage.png">
+                    <img src="/csw2.png">
+                    <div class="layer">
+                        <h3>Website</h3>
+                        <p>Websites with HTML-CSS-JS</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="/MineSweeper.png">
+                    <img src="/PasswordGenerate.jpg">
+                    <div class="layer">
+                        <h3>Games Front-end</h3>
+                        <p>Simple classic games with HTML-CSS-JS</p>
+                        <a href="https://github.com/DiegoSilvaN/Games_Front"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="/DataScSalario.jpg">
+                    <img src="/PrimeVideo.jpg">
+                    <img src="/VGVentas.jpg">
+                    <div class="layer">
+                        <h3>Data Dashboard</h3>
+                        <p>Dashboard create in Power BI</p>
+                        <a href="https://github.com/DiegoSilvaN/DataScience_Job_Salaries"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/DiegoSilvaN" class="btn">See more</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-t"> Contact Me </h1>
+                    <p><i class="fas fa-paper-plane"></i>ddsilvan20@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+56 9 63149349</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/diego-silva-navarro-54bb83237/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/diegosilvaa.n/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/DiegoSilvaN"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="/DS_CV_Inglés.pdf" download class="btn btn2">Download My CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>  
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" onclick="enviarCorreo()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2025 DsN. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+            
+        function opentab(tabname){    
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-link");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab"); 
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        function enviarCorreo() {
+            var nombre = document.getElementById("nombre").value;
+            var correoElectronico = document.getElementById("correo-electronico").value;
+            var mensaje = document.getElementById("mensaje").value;
+            window.location.href = "mailto: ddsilvan20@gmail.com" + nombre + "&body=" + mensaje;
+        }
+    </script>
+    
+</body>
+</html>
