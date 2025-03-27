@@ -43,7 +43,20 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="me.png" alt="Diego">
+                    <div class="slide-container">
+                        <div class="slide">
+                            <img src="me3.jpg" alt="slide1">
+                        </div>
+                        <div class="slide">
+                            <img src="park2.jpg" alt="slide2">
+                        </div>
+                        <div class="slide">
+                            <img src="sur.jpg" alt="slide2">
+                        </div>
+                        <div class="slide">
+                            <img src="me2.jpg" alt="slide3">
+                        </div>
+                    </div>
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-t">Who am I? </h1>
@@ -221,6 +234,32 @@
             var mensaje = document.getElementById("mensaje").value;
             window.location.href = "mailto: ddsilvan20@gmail.com" + nombre + "&body=" + mensaje;
         }
+    </script>
+    
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const slideContainer = document.querySelector('.slide-container');
+
+        let currenSlide = 0;
+
+        function showSlide(){
+            slides[currenSlide].classList.add('active');
+        }
+        function hideSlide(){
+            slides[currenSlide].classList.remove('active');
+        }
+        function nextSlide(){
+            hideSlide();
+            currenSlide = (currenSlide + 1) % slides.length;
+            showSlide();
+        }
+        function prevSlide(){
+            hideSlide();
+            currenSlide = (currenSlide - 1 + slides.length) % slides.length;
+            showSlide();
+        }
+        showSlide();
+        setInterval(nextSlide, 3000);
     </script>
     
 </body>
